@@ -50,6 +50,7 @@ def fetch_video():
     # এখানে আমরা কুকি ডাটাবেজের লক সিস্টেম বাদ দিয়ে স্ট্যান্ডার্ড মেথড ব্যবহার করছি
     ydl_opts = {
         'format': 'best',
+        'cookiefile': 'cookies.txt',
         'quiet': True,
         'no_warnings': True,
         'no_color': True,
